@@ -1,0 +1,158 @@
+[gd_scene load_steps=57 format=2]
+
+[ext_resource path="res://Characters/TemplateCharacter.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_riffle/Idle_riffle_000.png" type="Texture" id=2]
+[ext_resource path="res://Characters/Player/Player.gd" type="Script" id=3]
+[ext_resource path="res://UI/RespawnPopup.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Items/Weapons.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_riffle/Idle_riffle_001.png" type="Texture" id=6]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_riffle/Idle_riffle_002.png" type="Texture" id=7]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_riffle/Idle_riffle_006.png" type="Texture" id=8]
+[ext_resource path="res://Assets/GFX/Characters/Player/Walk_riffle/Walk_riffle_003.png" type="Texture" id=9]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_riffle/Idle_riffle_003.png" type="Texture" id=10]
+[ext_resource path="res://Assets/GFX/Characters/Player/Walk_riffle/Walk_riffle_001.png" type="Texture" id=11]
+[ext_resource path="res://Assets/GFX/Characters/Player/Walk_riffle/Walk_riffle_000.png" type="Texture" id=12]
+[ext_resource path="res://Assets/GFX/Characters/Player/Walk_riffle/Walk_riffle_002.png" type="Texture" id=13]
+[ext_resource path="res://Assets/GFX/Characters/Player/Walk_riffle/Walk_riffle_004.png" type="Texture" id=14]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_riffle/Idle_riffle_004.png" type="Texture" id=15]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_riffle/Idle_riffle_005.png" type="Texture" id=16]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_riffle/Idle_riffle_007.png" type="Texture" id=17]
+[ext_resource path="res://Assets/GFX/Characters/Player/Walk_riffle/Walk_riffle_005.png" type="Texture" id=18]
+[ext_resource path="res://Assets/GFX/Characters/Player/Death/death_0000_Man.png" type="Texture" id=19]
+[ext_resource path="res://Assets/GFX/Characters/Player/Death/death_0001_Man.png" type="Texture" id=20]
+[ext_resource path="res://Assets/GFX/Characters/Player/Death/death_0002_Man.png" type="Texture" id=21]
+[ext_resource path="res://Assets/GFX/Characters/Player/Death/death_0005_Man.png" type="Texture" id=22]
+[ext_resource path="res://Assets/GFX/Characters/Player/Death/death_0003_Man.png" type="Texture" id=23]
+[ext_resource path="res://Assets/GFX/Characters/Player/Death/death_0004_Man.png" type="Texture" id=24]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_firethrower/Idle_firethrower_001.png" type="Texture" id=25]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_firethrower/Idle_firethrower_000.png" type="Texture" id=26]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_firethrower/Idle_firethrower_002.png" type="Texture" id=27]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_firethrower/Idle_firethrower_004.png" type="Texture" id=28]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_firethrower/Idle_firethrower_003.png" type="Texture" id=29]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_firethrower/Idle_firethrower_005.png" type="Texture" id=30]
+[ext_resource path="res://Assets/GFX/Characters/Player/Walk_gun/Walk_gun_005.png" type="Texture" id=31]
+[ext_resource path="res://Assets/GFX/Characters/Player/Walk_gun/Walk_gun_001.png" type="Texture" id=32]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_firethrower/Idle_firethrower_006.png" type="Texture" id=33]
+[ext_resource path="res://Assets/GFX/Characters/Player/Walk_firethrower/Walk_firethrower_003.png" type="Texture" id=34]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_gun/Idle_gun_000.png" type="Texture" id=35]
+[ext_resource path="res://Assets/GFX/Characters/Player/Walk_firethrower/Walk_firethrower_005.png" type="Texture" id=36]
+[ext_resource path="res://Assets/GFX/Characters/Player/Walk_gun/Walk_gun_000.png" type="Texture" id=37]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_gun/Idle_gun_001.png" type="Texture" id=38]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_gun/Idle_gun_002.png" type="Texture" id=39]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_gun/Idle_gun_006.png" type="Texture" id=40]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_gun/Idle_gun_007.png" type="Texture" id=41]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_gun/Idle_gun_004.png" type="Texture" id=42]
+[ext_resource path="res://Assets/GFX/Characters/Player/Walk_firethrower/Walk_firethrower_002.png" type="Texture" id=43]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_gun/Idle_gun_005.png" type="Texture" id=44]
+[ext_resource path="res://Assets/GFX/Characters/Player/Walk_firethrower/Walk_firethrower_004.png" type="Texture" id=45]
+[ext_resource path="res://Assets/GFX/Characters/Player/Walk_gun/Walk_gun_004.png" type="Texture" id=46]
+[ext_resource path="res://Assets/GFX/Characters/Player/Walk_firethrower/Walk_firethrower_000.png" type="Texture" id=47]
+[ext_resource path="res://Assets/GFX/Characters/Player/Walk_gun/Walk_gun_003.png" type="Texture" id=48]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_firethrower/Idle_firethrower_007.png" type="Texture" id=49]
+[ext_resource path="res://Assets/GFX/Characters/Player/Walk_gun/Walk_gun_002.png" type="Texture" id=50]
+[ext_resource path="res://Assets/GFX/Characters/Player/Walk_firethrower/Walk_firethrower_001.png" type="Texture" id=51]
+[ext_resource path="res://Assets/GFX/Characters/Player/Idle_gun/Idle_gun_003.png" type="Texture" id=52]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 47 ), ExtResource( 51 ), ExtResource( 43 ), ExtResource( 34 ), ExtResource( 45 ), ExtResource( 36 ) ],
+"loop": true,
+"name": "WalkingEnergy",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 14 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "WalkingRifle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 19 ) ],
+"loop": false,
+"name": "Dash",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 10 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 8 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "IdleRifle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 26 ), ExtResource( 25 ), ExtResource( 27 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 30 ), ExtResource( 33 ), ExtResource( 49 ) ],
+"loop": true,
+"name": "IdleEnergy",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 22 ) ],
+"loop": false,
+"name": "Death",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 35 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 52 ), ExtResource( 42 ), ExtResource( 44 ), ExtResource( 40 ), ExtResource( 41 ) ],
+"loop": true,
+"name": "IdlePistol",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 37 ), ExtResource( 32 ), ExtResource( 50 ), ExtResource( 48 ), ExtResource( 46 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "WalkingPistol",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 39.301
+
+[sub_resource type="OccluderPolygon2D" id=3]
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 62.9712
+
+[node name="Player" groups=[
+"HuntablePlayer",
+"Players",
+] instance=ExtResource( 1 )]
+scale = Vector2( 0.8, 0.8 )
+z_index = 2
+collision_layer = 1
+collision_mask = 6
+script = ExtResource( 3 )
+
+[node name="Sprite" parent="." index="0"]
+position = Vector2( 62, 10 )
+rotation = -1.5708
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 1 )
+animation = "IdleEnergy"
+frame = 1
+playing = true
+
+[node name="CharacterCollision" parent="." index="1"]
+visible = true
+shape = SubResource( 2 )
+
+[node name="LightOccluder2D" parent="." index="2"]
+visible = true
+occluder = SubResource( 3 )
+
+[node name="Camera2D" type="Camera2D" parent="." index="3"]
+
+[node name="Weapons" parent="." index="4" instance=ExtResource( 5 )]
+position = Vector2( 30, 17 )
+z_index = 1
+
+[node name="Rolling" type="Timer" parent="." index="5"]
+wait_time = 0.5
+one_shot = true
+
+[node name="Revive" type="Area2D" parent="." index="6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Revive" index="0"]
+visible = false
+shape = SubResource( 4 )
+
+[node name="DeathTimer" type="Timer" parent="." index="7"]
+wait_time = 15.0
+one_shot = true
+
+[node name="Respawn" parent="." index="8" instance=ExtResource( 4 )]
+[connection signal="timeout" from="Rolling" to="." method="_on_Rolling_timeout"]
+[connection signal="body_entered" from="Revive" to="." method="_on_Revive_body_entered"]
+[connection signal="body_exited" from="Revive" to="." method="_on_Revive_body_exited"]
+[connection signal="timeout" from="DeathTimer" to="." method="_on_DeathTimer_timeout"]

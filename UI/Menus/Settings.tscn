@@ -1,0 +1,105 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://UI/Menus/Settings.gd" type="Script" id=1]
+[ext_resource path="res://Assets/GFX/GUI/stranger_big.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Assets/GFX/GUI/main_theme.tres" type="Theme" id=3]
+[ext_resource path="res://Assets/GFX/GUI/Background.png" type="Texture" id=4]
+
+[node name="Settings" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 3 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MasterVolume" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -145.96
+margin_top = -150.0
+margin_right = 194.04
+margin_bottom = -50.0
+custom_fonts/font = ExtResource( 2 )
+text = "Master Volume"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MasterSlider" type="HSlider" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -200.0
+margin_top = -70.0
+margin_right = 75.0
+margin_bottom = -30.0
+rect_scale = Vector2( 1.5, 1.5 )
+min_value = -30.0
+max_value = 10.0
+rounded = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fullscreen" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -156.973
+margin_top = 6.13324
+margin_right = 51.0266
+margin_bottom = 106.133
+custom_fonts/font = ExtResource( 2 )
+text = "Fullscreen:"
+
+[node name="FullscreenCheck" type="CheckBox" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 66.6404
+margin_top = 4.76007
+margin_right = 90.6406
+margin_bottom = 55.7601
+rect_scale = Vector2( 2, 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Save" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -70.0
+margin_top = 170.0
+margin_right = 70.0
+margin_bottom = 200.0
+text = "Save"
+
+[node name="Back" type="Button" parent="."]
+margin_left = 30.0
+margin_top = 30.0
+margin_right = 160.0
+margin_bottom = 90.0
+text = "Back"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Save" to="." method="_on_Save_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]

@@ -1,0 +1,267 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Characters/Player/Joystick.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/GFX/Effects/dotBlue.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 12.0
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 12.0
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 12.0
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 12.0
+
+[sub_resource type="CircleShape2D" id=5]
+radius = 12.0
+
+[sub_resource type="CircleShape2D" id=6]
+radius = 12.0
+
+[sub_resource type="CircleShape2D" id=7]
+radius = 12.0
+
+[node name="TouchControls" type="CanvasLayer"]
+layer = 2
+
+[node name="Control" type="Control" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -40.0
+margin_right = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Movement" parent="Control" instance=ExtResource( 1 )]
+position = Vector2( 176, -200 )
+scale = Vector2( 2, 2 )
+
+[node name="Control2" type="Control" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -40.0
+margin_top = -40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Aim" parent="Control2" instance=ExtResource( 1 )]
+position = Vector2( -474, -200 )
+scale = Vector2( 2, 2 )
+
+[node name="Control3" type="Control" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Escape" type="TouchScreenButton" parent="Control3"]
+position = Vector2( -105, 75 )
+scale = Vector2( 3, 3 )
+normal = ExtResource( 2 )
+shape = SubResource( 1 )
+action = "pause"
+
+[node name="Control4" type="Control" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -40.0
+margin_top = -40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="TouchScreenButton" parent="Control4"]
+position = Vector2( -315, -380 )
+scale = Vector2( 3, 3 )
+normal = ExtResource( 2 )
+shape = SubResource( 2 )
+action = "weapon_1"
+
+[node name="Label" type="Label" parent="Control4/1"]
+margin_left = 6.9572
+margin_top = 5.72945
+margin_right = 14.9572
+margin_bottom = 19.7294
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control5" type="Control" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -40.0
+margin_top = -40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2" type="TouchScreenButton" parent="Control5"]
+position = Vector2( -230, -380 )
+scale = Vector2( 3, 3 )
+normal = ExtResource( 2 )
+shape = SubResource( 3 )
+action = "weapon_2"
+
+[node name="Label" type="Label" parent="Control5/2"]
+margin_left = 8.18491
+margin_top = 5.32021
+margin_right = 16.1849
+margin_bottom = 19.3202
+text = "2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control6" type="Control" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -40.0
+margin_top = -40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="3" type="TouchScreenButton" parent="Control6"]
+position = Vector2( -145, -380 )
+scale = Vector2( 3, 3 )
+normal = ExtResource( 2 )
+shape = SubResource( 4 )
+action = "weapon_3"
+
+[node name="Label" type="Label" parent="Control6/3"]
+margin_left = 8.18494
+margin_top = 5.72945
+margin_right = 16.1849
+margin_bottom = 19.7295
+text = "3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control7" type="Control" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -40.0
+margin_top = -40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Torch" type="TouchScreenButton" parent="Control7"]
+position = Vector2( -145, -295 )
+scale = Vector2( 3, 3 )
+normal = ExtResource( 2 )
+shape = SubResource( 5 )
+action = "torch"
+
+[node name="Label" type="Label" parent="Control7/Torch"]
+margin_left = 8.18494
+margin_top = 4.91097
+margin_right = 15.1849
+margin_bottom = 18.911
+text = "F"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control8" type="Control" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -40.0
+margin_top = -40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Interact" type="TouchScreenButton" parent="Control8"]
+position = Vector2( -145, -210 )
+scale = Vector2( 3, 3 )
+normal = ExtResource( 2 )
+shape = SubResource( 6 )
+action = "interact"
+
+[node name="Label" type="Label" parent="Control8/Interact"]
+margin_left = 8.18494
+margin_top = 4.91096
+margin_right = 15.1849
+margin_bottom = 18.911
+text = "E"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control9" type="Control" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -40.0
+margin_top = -40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Roll" type="TouchScreenButton" parent="Control9"]
+position = Vector2( -145, -125 )
+scale = Vector2( 3, 3 )
+normal = ExtResource( 2 )
+shape = SubResource( 7 )
+action = "roll"
+
+[node name="Label" type="Label" parent="Control9/Roll"]
+margin_top = 5.0
+margin_right = 24.0
+margin_bottom = 19.0
+text = "Roll"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control10" type="Control" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -40.0
+margin_top = -40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Reload" type="TouchScreenButton" parent="Control10"]
+position = Vector2( -250, -275 )
+scale = Vector2( 3, 3 )
+normal = ExtResource( 2 )
+shape = SubResource( 4 )
+action = "reload"
+
+[node name="Label" type="Label" parent="Control10/Reload"]
+margin_left = 7.77913
+margin_top = 4.59076
+margin_right = 16.7791
+margin_bottom = 18.5908
+text = "R"
+__meta__ = {
+"_edit_use_anchors_": false
+}

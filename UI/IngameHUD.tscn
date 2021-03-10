@@ -1,0 +1,193 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://UI/IngameHUD.gd" type="Script" id=1]
+[ext_resource path="res://Assets/GFX/GUI/Old/fill-energy.png" type="Texture" id=2]
+[ext_resource path="res://Assets/GFX/GUI/Old/fill.png" type="Texture" id=3]
+[ext_resource path="res://Assets/GFX/GUI/Old/bg.png" type="Texture" id=4]
+[ext_resource path="res://Assets/GFX/GUI/Old/bg - energy.png" type="Texture" id=5]
+[ext_resource path="res://Assets/GFX/GUI/main_theme.tres" type="Theme" id=6]
+[ext_resource path="res://UI/Menus/PauseMenu.tscn" type="PackedScene" id=7]
+
+[node name="IngameHUD" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 30.0
+margin_top = 30.0
+margin_right = -30.0
+margin_bottom = -30.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/HBoxContainer"]
+margin_right = 434.0
+margin_bottom = 540.0
+rect_min_size = Vector2( 250, 100 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayerInfo" type="Control" parent="Control/HBoxContainer/VBoxContainer"]
+margin_right = 434.0
+margin_bottom = 212.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.4
+
+[node name="Health" type="TextureProgress" parent="Control/HBoxContainer/VBoxContainer/PlayerInfo"]
+margin_top = 4.0
+margin_right = 200.0
+margin_bottom = 44.0
+rect_min_size = Vector2( 200, 40 )
+size_flags_horizontal = 0
+texture_under = ExtResource( 4 )
+texture_progress = ExtResource( 3 )
+nine_patch_stretch = true
+stretch_margin_left = 20
+stretch_margin_top = 20
+stretch_margin_right = 20
+stretch_margin_bottom = 20
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Stamina" type="TextureProgress" parent="Control/HBoxContainer/VBoxContainer/PlayerInfo"]
+margin_top = 48.0
+margin_right = 100.0
+margin_bottom = 88.0
+rect_min_size = Vector2( 100, 40 )
+size_flags_horizontal = 0
+texture_under = ExtResource( 5 )
+texture_progress = ExtResource( 2 )
+nine_patch_stretch = true
+stretch_margin_left = 20
+stretch_margin_top = 20
+stretch_margin_right = 20
+stretch_margin_bottom = 20
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Points" type="Label" parent="Control/HBoxContainer/VBoxContainer/PlayerInfo"]
+margin_top = 95.0
+margin_right = 616.0
+margin_bottom = 126.0
+rect_min_size = Vector2( 50, 20 )
+text = "Points:"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Position" type="Label" parent="Control/HBoxContainer/VBoxContainer/PlayerInfo"]
+margin_top = 125.0
+margin_right = 616.0
+margin_bottom = 156.0
+rect_min_size = Vector2( 50, 20 )
+text = "Coords:"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="Control/HBoxContainer/VBoxContainer"]
+margin_top = 216.0
+margin_right = 434.0
+margin_bottom = 482.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Players" type="VBoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
+margin_top = 486.0
+margin_right = 434.0
+margin_bottom = 540.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+
+[node name="Control" type="Control" parent="Control/HBoxContainer"]
+margin_left = 438.0
+margin_right = 524.0
+margin_bottom = 540.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Control/HBoxContainer"]
+margin_left = 528.0
+margin_right = 964.0
+margin_bottom = 540.0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CurrentWeapon" type="Label" parent="Control/HBoxContainer/VBoxContainer2"]
+margin_right = 436.0
+margin_bottom = 31.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.05
+text = "Weapon:"
+valign = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
+margin_top = 35.0
+margin_right = 338.0
+margin_bottom = 66.0
+size_flags_horizontal = 0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.05
+custom_constants/separation = 10
+
+[node name="Wep1" type="Label" parent="Control/HBoxContainer/VBoxContainer2/HBoxContainer"]
+margin_right = 101.0
+margin_bottom = 31.0
+size_flags_horizontal = 3
+text = "Weapon 1"
+
+[node name="Wep2" type="Label" parent="Control/HBoxContainer/VBoxContainer2/HBoxContainer"]
+margin_left = 111.0
+margin_right = 222.0
+margin_bottom = 31.0
+size_flags_horizontal = 3
+text = "Weapon 2"
+
+[node name="Wep3" type="Label" parent="Control/HBoxContainer/VBoxContainer2/HBoxContainer"]
+margin_left = 232.0
+margin_right = 338.0
+margin_bottom = 31.0
+size_flags_horizontal = 3
+text = "Weapon 3"
+
+[node name="Control" type="Control" parent="Control/HBoxContainer/VBoxContainer2"]
+margin_top = 70.0
+margin_right = 436.0
+margin_bottom = 505.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.8
+
+[node name="Round" type="Label" parent="Control/HBoxContainer/VBoxContainer2"]
+margin_top = 509.0
+margin_right = 436.0
+margin_bottom = 540.0
+size_flags_stretch_ratio = 0.1
+text = "Round"
+align = 2
+
+[node name="PauseMenu" parent="." instance=ExtResource( 7 )]
+visible = false

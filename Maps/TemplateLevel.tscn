@@ -1,0 +1,107 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Maps/Tiles/Walls.tres" type="TileSet" id=1]
+[ext_resource path="res://Maps/Tiles/Ground.tres" type="TileSet" id=2]
+[ext_resource path="res://Maps/LightLevel.gd" type="Script" id=3]
+[ext_resource path="res://Maps/TemplateLevel.gd" type="Script" id=4]
+[ext_resource path="res://Maps/Tiles/Nav.tres" type="TileSet" id=5]
+[ext_resource path="res://Maps/Tiles/Cracks.tres" type="TileSet" id=6]
+[ext_resource path="res://Maps/Tiles/Environment.tres" type="TileSet" id=7]
+[ext_resource path="res://Maps/Tiles/ExtraDetails.tres" type="TileSet" id=8]
+[ext_resource path="res://WorldEnvironment.tscn" type="PackedScene" id=9]
+
+[node name="TemplateLevel" type="Node2D" groups=[
+"Level",
+]]
+script = ExtResource( 4 )
+
+[node name="Navigation2D" type="Navigation2D" parent="."]
+
+[node name="Tilemaps" type="Node2D" parent="Navigation2D"]
+
+[node name="Navigation" type="TileMap" parent="Navigation2D/Tilemaps"]
+visible = false
+tile_set = ExtResource( 5 )
+format = 1
+
+[node name="Background" type="TileMap" parent="Navigation2D/Tilemaps"]
+visible = false
+tile_set = ExtResource( 2 )
+collision_layer = 2147483650
+collision_mask = 5
+format = 1
+
+[node name="Ground1" type="TileMap" parent="Navigation2D/Tilemaps"]
+visible = false
+tile_set = ExtResource( 2 )
+collision_layer = 2147483650
+collision_mask = 5
+format = 1
+
+[node name="Ground2" type="TileMap" parent="Navigation2D/Tilemaps"]
+visible = false
+tile_set = ExtResource( 2 )
+collision_layer = 2147483650
+collision_mask = 5
+format = 1
+
+[node name="Ground3" type="TileMap" parent="Navigation2D/Tilemaps"]
+visible = false
+tile_set = ExtResource( 2 )
+collision_layer = 2147483650
+collision_mask = 5
+format = 1
+
+[node name="Ground4" type="TileMap" parent="Navigation2D/Tilemaps"]
+visible = false
+tile_set = ExtResource( 2 )
+collision_layer = 2147483650
+collision_mask = 5
+format = 1
+
+[node name="Ground5" type="TileMap" parent="Navigation2D/Tilemaps"]
+visible = false
+tile_set = ExtResource( 2 )
+collision_layer = 2147483650
+collision_mask = 5
+format = 1
+
+[node name="Cracks" type="TileMap" parent="Navigation2D/Tilemaps"]
+tile_set = ExtResource( 6 )
+centered_textures = true
+format = 1
+
+[node name="ExtraDetails" type="TileMap" parent="Navigation2D/Tilemaps"]
+tile_set = ExtResource( 8 )
+format = 1
+
+[node name="Walls" type="TileMap" parent="Navigation2D/Tilemaps"]
+tile_set = ExtResource( 1 )
+collision_layer = 2
+collision_mask = 9
+format = 1
+
+[node name="Environment1" type="TileMap" parent="Navigation2D/Tilemaps"]
+tile_set = ExtResource( 7 )
+format = 1
+
+[node name="Environment2" type="TileMap" parent="Navigation2D/Tilemaps"]
+tile_set = ExtResource( 7 )
+format = 1
+
+[node name="Environment3" type="TileMap" parent="Navigation2D/Tilemaps"]
+tile_set = ExtResource( 7 )
+format = 1
+
+[node name="WorldEnvironment" parent="." instance=ExtResource( 9 )]
+
+[node name="LightLevel" type="CanvasModulate" parent="."]
+script = ExtResource( 3 )
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="NPC\'s" type="Node2D" parent="."]
+
+[node name="Items" type="Node2D" parent="."]
+
+[node name="Doors" type="Node2D" parent="."]

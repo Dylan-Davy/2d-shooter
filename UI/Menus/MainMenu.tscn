@@ -1,0 +1,81 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://UI/Menus/MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://Assets/GFX/GUI/main_theme.tres" type="Theme" id=2]
+[ext_resource path="res://Assets/GFX/GUI/Background.png" type="Texture" id=3]
+[ext_resource path="res://Assets/GFX/GUI/stranger_big.tres" type="DynamicFont" id=4]
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -200.0
+margin_top = -200.0
+margin_right = 200.0
+margin_bottom = 200.0
+custom_constants/separation = 10
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Campaign" type="Button" parent="VBoxContainer"]
+margin_right = 400.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
+custom_fonts/font = ExtResource( 4 )
+disabled = true
+text = "Campaign"
+
+[node name="Survival" type="Button" parent="VBoxContainer"]
+margin_top = 110.0
+margin_right = 400.0
+margin_bottom = 210.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
+custom_fonts/font = ExtResource( 4 )
+text = "Survival"
+
+[node name="Settings" type="Button" parent="VBoxContainer"]
+margin_top = 220.0
+margin_right = 400.0
+margin_bottom = 320.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
+custom_fonts/font = ExtResource( 4 )
+text = "Settings"
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+margin_top = 330.0
+margin_right = 400.0
+margin_bottom = 430.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
+custom_fonts/font = ExtResource( 4 )
+text = "Exit"
+[connection signal="pressed" from="VBoxContainer/Survival" to="." method="_on_Survival_pressed"]
+[connection signal="pressed" from="VBoxContainer/Settings" to="." method="_on_Settings_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_Exit_pressed"]

@@ -1,0 +1,276 @@
+[gd_scene load_steps=150 format=2]
+
+[ext_resource path="res://Characters/TemplateCharacter.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Death/Death_003.png" type="Texture" id=2]
+[ext_resource path="res://Characters/Enemies/Basic enemies/Zombie.gd" type="Script" id=3]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Attack/Attack_008.png" type="Texture" id=4]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Death/Death_005.png" type="Texture" id=5]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Attack/Attack_002.png" type="Texture" id=6]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Attack/Attack_001.png" type="Texture" id=7]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Attack/Attack_003.png" type="Texture" id=8]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Attack/Attack_007.png" type="Texture" id=9]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Attack/Attack_005.png" type="Texture" id=10]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Attack/Attack_004.png" type="Texture" id=11]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Attack/Attack_006.png" type="Texture" id=12]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Death/Death_004.png" type="Texture" id=13]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Death/Death_001.png" type="Texture" id=14]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Death/Death_002.png" type="Texture" id=15]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Attack/Attack_000.png" type="Texture" id=16]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Walk/Walk_000.png" type="Texture" id=17]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Walk/Walk_001.png" type="Texture" id=18]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Walk/Walk_002.png" type="Texture" id=19]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Walk/Walk_003.png" type="Texture" id=20]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Walk/Walk_004.png" type="Texture" id=21]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Walk/Walk_006.png" type="Texture" id=22]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Walk/Walk_005.png" type="Texture" id=23]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Walk/Walk_007.png" type="Texture" id=24]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Walk/Walk_008.png" type="Texture" id=25]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie1_female/Death/Death_000.png" type="Texture" id=26]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Walk/Walk_000.png" type="Texture" id=27]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Walk/Walk_002.png" type="Texture" id=28]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Walk/Walk_001.png" type="Texture" id=29]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Walk/Walk_003.png" type="Texture" id=30]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Walk/Walk_004.png" type="Texture" id=31]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Death/Death_000.png" type="Texture" id=32]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Death/Death_001.png" type="Texture" id=33]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Death/Death_002.png" type="Texture" id=34]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Walk/Walk_006.png" type="Texture" id=35]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Walk/Walk_007.png" type="Texture" id=36]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Walk/Walk_005.png" type="Texture" id=37]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Walk/Walk_008.png" type="Texture" id=38]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Walk/walk_000.png" type="Texture" id=39]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Walk/walk_002.png" type="Texture" id=40]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Walk/walk_001.png" type="Texture" id=41]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Death/Death_003.png" type="Texture" id=42]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Death/Death_005.png" type="Texture" id=43]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Death/Death_004.png" type="Texture" id=44]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Walk/walk_001.png" type="Texture" id=45]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Walk/walk_005.png" type="Texture" id=46]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Walk/walk_007.png" type="Texture" id=47]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Walk/walk_003.png" type="Texture" id=48]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Walk/walk_004.png" type="Texture" id=49]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Walk/walk_006.png" type="Texture" id=50]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Walk/walk_004.png" type="Texture" id=51]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Walk/walk_001.png" type="Texture" id=52]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Walk/walk_007.png" type="Texture" id=53]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Walk/walk_006.png" type="Texture" id=54]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Walk/walk_002.png" type="Texture" id=55]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Walk/Walk_001.png" type="Texture" id=56]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Walk/walk_007.png" type="Texture" id=57]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Walk/walk_008.png" type="Texture" id=58]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Walk/walk_008.png" type="Texture" id=59]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Walk/Walk_004.png" type="Texture" id=60]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Walk/walk_003.png" type="Texture" id=61]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Walk/Walk_008.png" type="Texture" id=62]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Walk/Walk_007.png" type="Texture" id=63]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Walk/Walk_006.png" type="Texture" id=64]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Walk/Walk_005.png" type="Texture" id=65]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Walk/Walk_003.png" type="Texture" id=66]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Walk/walk_000.png" type="Texture" id=67]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Walk/Walk_002.png" type="Texture" id=68]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Walk/walk_002.png" type="Texture" id=69]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Walk/walk_003.png" type="Texture" id=70]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Walk/walk_004.png" type="Texture" id=71]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Walk/walk_005.png" type="Texture" id=72]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Walk/walk_006.png" type="Texture" id=73]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Walk/walk_005.png" type="Texture" id=74]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Walk/Walk_000.png" type="Texture" id=75]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Walk/walk_000.png" type="Texture" id=76]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Death/death_000.png" type="Texture" id=77]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Death/Death_004.png" type="Texture" id=78]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Death/death_002.png" type="Texture" id=79]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Death/Death_002.png" type="Texture" id=80]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Death/death_005.png" type="Texture" id=81]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Death/Death_005.png" type="Texture" id=82]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Death/Death_000.png" type="Texture" id=83]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Death/daeth_004.png" type="Texture" id=84]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Death/Death_000.png" type="Texture" id=85]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Death/daeth_001.png" type="Texture" id=86]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Death/death_001.png" type="Texture" id=87]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Death/death_004.png" type="Texture" id=88]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Death/daeth_000.png" type="Texture" id=89]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Death/daeth_003.png" type="Texture" id=90]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Death/Death_003.png" type="Texture" id=91]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Walk/walk_008.png" type="Texture" id=92]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Death/Death_001.png" type="Texture" id=93]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Death/Death_004.png" type="Texture" id=94]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Death/death_003.png" type="Texture" id=95]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Death/daeth_002.png" type="Texture" id=96]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Death/daeth_005.png" type="Texture" id=97]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Death/Death_001.png" type="Texture" id=98]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Death/Death_002.png" type="Texture" id=99]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Death/Death_003.png" type="Texture" id=100]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Death/Death_005.png" type="Texture" id=101]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Attack/Attack_005.png" type="Texture" id=102]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Attack/Attack_004.png" type="Texture" id=103]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Attack/Attack_006.png" type="Texture" id=104]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Attack/Attack_001.png" type="Texture" id=105]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Attack/Attack_002.png" type="Texture" id=106]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Attack/Attack_000.png" type="Texture" id=107]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Attack/Attack_003.png" type="Texture" id=108]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Attack/Attack_003.png" type="Texture" id=109]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Attack/Attack_000.png" type="Texture" id=110]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Attack/Attack_007.png" type="Texture" id=111]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Attack/Attack_004.png" type="Texture" id=112]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Attack/Attack_001.png" type="Texture" id=113]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Attack/Attack_003.png" type="Texture" id=114]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Attack/Attack_006.png" type="Texture" id=115]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Attack/Attack_007.png" type="Texture" id=116]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Attack/attack_005.png" type="Texture" id=117]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Attack/attack_006.png" type="Texture" id=118]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Attack/Attack_004.png" type="Texture" id=119]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Attack/attack_000.png" type="Texture" id=120]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Attack/Attack_008.png" type="Texture" id=121]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Attack/Attack_006.png" type="Texture" id=122]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Attack/attack_004.png" type="Texture" id=123]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Attack/attack_001.png" type="Texture" id=124]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Attack/attack_002.png" type="Texture" id=125]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Attack/Attack_000.png" type="Texture" id=126]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie2_female/Attack/Attack_008.png" type="Texture" id=127]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Attack/attack_000.png" type="Texture" id=128]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Attack/Attack_005.png" type="Texture" id=129]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Attack/attack_001.png" type="Texture" id=130]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Attack/attack_002.png" type="Texture" id=131]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Attack/Attack_002.png" type="Texture" id=132]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Attack/Attack_001.png" type="Texture" id=133]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Attack/Attack_002.png" type="Texture" id=134]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Attack/Attack_005.png" type="Texture" id=135]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie4_male/Attack/Attack_008.png" type="Texture" id=136]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Attack/attack_007.png" type="Texture" id=137]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Zombie3_male/Attack/Attack_007.png" type="Texture" id=138]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Attack/attack_008.png" type="Texture" id=139]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Army_zombie/Attack/attack_003.png" type="Texture" id=140]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Attack/attack_007.png" type="Texture" id=141]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Attack/attack_006.png" type="Texture" id=142]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Attack/attack_003.png" type="Texture" id=143]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Attack/attack_008.png" type="Texture" id=144]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Attack/attack_005.png" type="Texture" id=145]
+[ext_resource path="res://Assets/GFX/Characters/Enemies/Basic enemies/Zombies/Cop_Zombie/Attack/attack_004.png" type="Texture" id=146]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 16 ), ExtResource( 7 ), ExtResource( 6 ), ExtResource( 8 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 12 ), ExtResource( 9 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "Attack1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 128 ), ExtResource( 130 ), ExtResource( 131 ), ExtResource( 140 ), ExtResource( 123 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 137 ), ExtResource( 139 ) ],
+"loop": true,
+"name": "Attack5",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 76 ), ExtResource( 45 ), ExtResource( 55 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 74 ), ExtResource( 50 ), ExtResource( 53 ), ExtResource( 58 ) ],
+"loop": true,
+"name": "Walk5",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 85 ), ExtResource( 93 ), ExtResource( 99 ), ExtResource( 91 ), ExtResource( 94 ), ExtResource( 82 ) ],
+"loop": false,
+"name": "Death3",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 77 ), ExtResource( 87 ), ExtResource( 79 ), ExtResource( 95 ), ExtResource( 88 ), ExtResource( 81 ) ],
+"loop": false,
+"name": "Death5",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 39 ), ExtResource( 41 ), ExtResource( 40 ), ExtResource( 61 ), ExtResource( 51 ), ExtResource( 46 ), ExtResource( 54 ), ExtResource( 47 ), ExtResource( 59 ) ],
+"loop": true,
+"name": "Walk3",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 27 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 37 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 38 ) ],
+"loop": true,
+"name": "Walk2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 120 ), ExtResource( 124 ), ExtResource( 125 ), ExtResource( 143 ), ExtResource( 146 ), ExtResource( 145 ), ExtResource( 142 ), ExtResource( 141 ), ExtResource( 144 ) ],
+"loop": true,
+"name": "Attack6",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 23 ), ExtResource( 22 ), ExtResource( 24 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "Walk1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 83 ), ExtResource( 98 ), ExtResource( 80 ), ExtResource( 100 ), ExtResource( 78 ), ExtResource( 101 ) ],
+"loop": false,
+"name": "Death2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 110 ), ExtResource( 133 ), ExtResource( 132 ), ExtResource( 114 ), ExtResource( 112 ), ExtResource( 129 ), ExtResource( 115 ), ExtResource( 116 ), ExtResource( 136 ) ],
+"loop": true,
+"name": "Attack4",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 75 ), ExtResource( 56 ), ExtResource( 68 ), ExtResource( 66 ), ExtResource( 60 ), ExtResource( 65 ), ExtResource( 64 ), ExtResource( 63 ), ExtResource( 62 ) ],
+"loop": true,
+"name": "Walk4",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 42 ), ExtResource( 44 ), ExtResource( 43 ) ],
+"loop": false,
+"name": "Death4",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 89 ), ExtResource( 86 ), ExtResource( 96 ), ExtResource( 90 ), ExtResource( 84 ), ExtResource( 97 ) ],
+"loop": false,
+"name": "Death6",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 26 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 2 ), ExtResource( 13 ), ExtResource( 5 ) ],
+"loop": false,
+"name": "Death1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 107 ), ExtResource( 105 ), ExtResource( 106 ), ExtResource( 108 ), ExtResource( 103 ), ExtResource( 102 ), ExtResource( 104 ), ExtResource( 111 ), ExtResource( 127 ) ],
+"loop": true,
+"name": "Attack2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 67 ), ExtResource( 52 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 57 ), ExtResource( 92 ) ],
+"loop": true,
+"name": "Walk6",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 126 ), ExtResource( 113 ), ExtResource( 134 ), ExtResource( 109 ), ExtResource( 119 ), ExtResource( 135 ), ExtResource( 122 ), ExtResource( 138 ), ExtResource( 121 ) ],
+"loop": true,
+"name": "Attack3",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 22.0
+
+[sub_resource type="OccluderPolygon2D" id=3]
+cull_mode = 1
+polygon = PoolVector2Array( -17.7471, 12.7506, -18.0625, -6.06441, -16.5909, -15.3143, -13.5426, -21.7261, -8.49727, -26.351, -2.92633, -28.9788, 2.74972, -29.6095, 8.53088, -28.1379, 12.9456, -26.4561, 18.5342, -22.0193, 21.2115, -16.1922, 21.999, -6.90023, 21.684, 4.28157, 21.2115, 14.8334, 18.6917, 22.7079, 11.5791, 27.0459, 6.32353, 29.6737, 0.542366, 30.8299, -5.55413, 28.4123, -10.7046, 25.0488, -14.4887, 21.8954, -16.0653, 16.9551 )
+
+[node name="Zombie" groups=[
+"Enemies",
+] instance=ExtResource( 1 )]
+scale = Vector2( 0.8, 0.8 )
+collision_mask = 12
+script = ExtResource( 3 )
+
+[node name="Sprite" parent="." index="0"]
+position = Vector2( -30, 0 )
+rotation = -1.5708
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 1 )
+animation = "Walk6"
+playing = true
+
+[node name="CharacterCollision" parent="." index="1"]
+visible = true
+z_index = 1
+shape = SubResource( 2 )
+
+[node name="LightOccluder2D" parent="." index="2"]
+visible = true
+occluder = SubResource( 3 )
+
+[node name="Despawn" type="Timer" parent="." index="3"]
+wait_time = 15.0
+[connection signal="timeout" from="Despawn" to="." method="_on_Despawn_timeout"]

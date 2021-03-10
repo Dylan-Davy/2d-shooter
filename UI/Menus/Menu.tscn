@@ -1,0 +1,121 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/GFX/GUI/stranger_big.tres" type="DynamicFont" id=1]
+[ext_resource path="res://UI/Menus/Menu.gd" type="Script" id=7]
+[ext_resource path="res://Assets/GFX/GUI/Background.png" type="Texture" id=8]
+[ext_resource path="res://Assets/GFX/GUI/main_theme.tres" type="Theme" id=9]
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 9 )
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -317.333
+margin_top = -223.48
+margin_right = 312.667
+margin_bottom = 232.52
+custom_constants/separation = 20
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title2" type="Label" parent="VBoxContainer"]
+margin_right = 630.0
+margin_bottom = 100.0
+custom_fonts/font = ExtResource( 1 )
+text = "Lobby"
+align = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 120.0
+margin_right = 630.0
+margin_bottom = 220.0
+custom_constants/separation = 30
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer"]
+margin_right = 220.0
+margin_bottom = 100.0
+custom_fonts/font = ExtResource( 1 )
+text = "Your name:"
+align = 2
+
+[node name="Name" type="LineEdit" parent="VBoxContainer/HBoxContainer"]
+margin_left = 250.0
+margin_right = 630.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 240.0
+margin_right = 630.0
+margin_bottom = 340.0
+custom_constants/separation = 30
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer2"]
+margin_right = 88.0
+margin_bottom = 100.0
+custom_fonts/font = ExtResource( 1 )
+text = "IP:"
+align = 2
+
+[node name="IP" type="LineEdit" parent="VBoxContainer/HBoxContainer2"]
+margin_left = 118.0
+margin_right = 630.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 360.0
+margin_right = 630.0
+margin_bottom = 456.0
+size_flags_vertical = 3
+custom_constants/separation = 0
+
+[node name="JoinButton" type="Button" parent="VBoxContainer/HBoxContainer3"]
+margin_right = 210.0
+margin_bottom = 96.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Join"
+
+[node name="CreateButton" type="Button" parent="VBoxContainer/HBoxContainer3"]
+margin_left = 210.0
+margin_right = 420.0
+margin_bottom = 96.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Create"
+
+[node name="SinglePlayer" type="Button" parent="VBoxContainer/HBoxContainer3"]
+margin_left = 420.0
+margin_right = 630.0
+margin_bottom = 96.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Single Player"
+[connection signal="text_changed" from="VBoxContainer/HBoxContainer/Name" to="." method="_on_Name_text_changed"]
+[connection signal="text_changed" from="VBoxContainer/HBoxContainer2/IP" to="." method="_on_IP_text_changed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/JoinButton" to="." method="_on_JoinButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/CreateButton" to="." method="_on_CreateButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/SinglePlayer" to="." method="_on_SinglePlayer_pressed"]

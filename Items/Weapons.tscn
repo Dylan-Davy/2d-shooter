@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Items/Weapons.gd" type="Script" id=1]
+[ext_resource path="res://Items/LaserBeam.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Items/Torch.tscn" type="PackedScene" id=3]
+
+[node name="Weapons" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Torch" parent="." instance=ExtResource( 3 )]
+show_behind_parent = true
+enabled = false
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+max_distance = 3000.0
+
+[node name="Wep1" type="Timer" parent="."]
+one_shot = true
+
+[node name="Wep2" type="Timer" parent="."]
+one_shot = true
+
+[node name="Wep3" type="Timer" parent="."]
+one_shot = true
+
+[node name="BurstTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="LaserBeam2D" parent="." instance=ExtResource( 2 )]
+[connection signal="timeout" from="Wep1" to="." method="_on_Wep1_timeout"]
+[connection signal="timeout" from="Wep2" to="." method="_on_Wep2_timeout"]
+[connection signal="timeout" from="Wep3" to="." method="_on_Wep3_timeout"]
+[connection signal="timeout" from="BurstTimer" to="." method="_on_BurstTimer_timeout"]

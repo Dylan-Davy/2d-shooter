@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Stalking-Prey.ogg-538431ae31b805ced5df71e30318db3a.oggstr"
+
+[deps]
+
+source_file="res://Assets/SFX/Ambient/Stalking-Prey.ogg"
+dest_files=[ "res://.import/Stalking-Prey.ogg-538431ae31b805ced5df71e30318db3a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

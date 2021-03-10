@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Minigun.wav-1d4ab57db7b55b44bbe9f57f7da67689.sample"
+
+[deps]
+
+source_file="res://Assets/SFX/Gunshots/Minigun.wav"
+dest_files=[ "res://.import/Minigun.wav-1d4ab57db7b55b44bbe9f57f7da67689.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

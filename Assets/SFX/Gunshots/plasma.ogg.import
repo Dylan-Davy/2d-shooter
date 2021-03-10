@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/plasma.ogg-96e80e6848f447b2e62d13ddc5774a46.oggstr"
+
+[deps]
+
+source_file="res://Assets/SFX/Gunshots/plasma.ogg"
+dest_files=[ "res://.import/plasma.ogg-96e80e6848f447b2e62d13ddc5774a46.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
